@@ -327,7 +327,7 @@
     </div>
     <audio src="explosion-42132.mp3" id="audio-si"></audio>
     <!--OPCIONES DE COSAS QUE HACER-->
-    <div class="contenedor-que-hacer">
+    <div class="contenedor-que-hacer" id="barra-que-hacer">
         <button class="quehaceres" id="quehacer-resolver-triangulos">RESOLVER TRIANGULO</button>
 
         <button class="quehaceres" id="quehacer-razones-trigonometricas">RAZONES TRIGONOMETRICAS</button>
@@ -554,6 +554,8 @@
 
 
     <script>
+        //_____ZONA QUE HACERES_____
+        const barraQueHacer = document.getElementById("barra-que-hacer");
 
 
 
@@ -1712,6 +1714,7 @@
             fondoError.style.display = "none";
         }
 
+        barraQueHacer.style.width = anchuraPantalla;
         //_____FIN DE LA REORGANICACION_____
 
     </script>
