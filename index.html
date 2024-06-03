@@ -1205,6 +1205,10 @@
                     todoMal = 1;
                     todoIncorrecto.textContent = "DEBES INTRODUCIR AL MENOS 3 VALORES";
                 }
+                else if(introducidos === 3 && angulo_a != 0 && angulo_b != 0 && angulo_c != 0){
+                    todoMal = 1;
+                    todoIncorrecto.textContent = "ESTE TRIANGULO NO SE PUEDE RESOLVER. SE NECESITA AL MENOS UN LADO PARA SER RESUELTO";
+                }
 
                 //lados incorrectos
                 else if(lado_a > lado_b + lado_c && lado_b != 0 && lado_c != 0 && lado_a != 0 && lado_b != 0 && lado_c != 0){
